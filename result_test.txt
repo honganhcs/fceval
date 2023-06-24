@@ -1,0 +1,37 @@
+{
+  "entailment": 1,
+  "reason": "The sentence can be inferred from the text since Paris is located in France, which is a country and therefore, can be considered big or small based on a relative comparison."
+}{
+"entailment": 1,
+"reason": "The sentence is a general statement about France and the text provides specific information about an aspect of France, namely that Paris is a city located in France. Therefore, the text entails the sentence."
+}{
+  "entailment": 1,
+  "reason": "The sentence 'France is a big country' implies that Paris is located in France, which is mentioned in the text."
+}{
+  "entailment": 1,
+  "reason": "The sentence is contrary to the text. Paris may be a city in France, but it does not necessarily imply that France is a big country. Therefore, the sentence cannot be inferred from the text."
+}{
+  "entailment": 1,
+  "reason": "The given sentence is a broader statement that encompasses Paris being a city in France."
+}{
+  "entailment": 1,
+  "reason": "The sentence can be inferred from the text since Paris is located inside France which suggests that France is a larger entity than Paris."
+}{
+  "entailment": 1,
+  "reason": "The sentence can be inferred from the text as 'Paris is a city in France', implying that France is a country. However, there is no information about its size, so the statement 'France is a big country' cannot be confirmed or contradicted by the given text."
+}{
+  "entailment": 1,
+  "reason": "The sentence can be inferred from the text. 'Paris is a city in France' implies that France exists and therefore is a country. Since Paris is a major city in France, it could also be inferred that France is big."
+}{
+  "entailment": 1,
+  "reason": "The sentence can be inferred from the text because Paris is located in France, which is a bigger geographic entity that contains other cities and regions."
+}{
+  "entailment": 1,
+  "reason": "The sentence is a generalization that includes Paris because Paris is located in France. Therefore, it can be inferred from the text."
+}{
+  "entailment": 1,
+  "reason": "The sentence gives a subjective opinion about Paris, but it does not contradict any information provided in the text. Therefore, it can be inferred that Paris is a city in France, and that the author thinks it's beautiful."
+}{
+  "consistency": 1,
+  "reason": "The sentence expresses a positive attribute of the city of Paris, which is a city in France as per the text."
+}
