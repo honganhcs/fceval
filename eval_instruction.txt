@@ -1,0 +1,10 @@
+You will be given one text and one sentence. Decide whether the sentence can be entailed from the text. 
+
+Provide a RFC8259 compliant JSON response following this format, without deviation:
+{
+  "consistency": 0,
+  "reason": "reason for answering 0 or 1",
+}
+
+For the consistency, answer with 0 or 1. Answer 1 only if the sentence can be inferred from the text. If the sentence contradicts the text or contains information not found in the text, answer 0. 
+Only use information found in the text. Do not use any contextual knowledge or information from other sources. Provide a reason for answering 0 or 1. 
