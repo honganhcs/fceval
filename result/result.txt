@@ -1,0 +1,7 @@
+[
+  {
+    "sentence_number": 41,
+    "entailed": 0,
+    "reason": "The sentence is incomplete and lacks any context or information that can be compared to the text."
+  }
+]

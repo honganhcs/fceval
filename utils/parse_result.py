@@ -1,9 +1,12 @@
 import json
+
+
 def parse_result(result):
     scores = []
     reasons = []
     answers = json.loads(result)
     for a in answers:
-        scores.append(int(a["consistency"]))
+        scores.append(int(a["entailed"]))
         reasons.append(a["reason"])
-    return scores, reasons
+    num_eval = len(scores)
+    return num_eval, scores, reasons

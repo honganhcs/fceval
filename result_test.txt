@@ -1,37 +1,79 @@
-{
-  "entailment": 1,
-  "reason": "The sentence can be inferred from the text since Paris is located in France, which is a country and therefore, can be considered big or small based on a relative comparison."
-}{
-"entailment": 1,
-"reason": "The sentence is a general statement about France and the text provides specific information about an aspect of France, namely that Paris is a city located in France. Therefore, the text entails the sentence."
-}{
-  "entailment": 1,
-  "reason": "The sentence 'France is a big country' implies that Paris is located in France, which is mentioned in the text."
-}{
-  "entailment": 1,
-  "reason": "The sentence is contrary to the text. Paris may be a city in France, but it does not necessarily imply that France is a big country. Therefore, the sentence cannot be inferred from the text."
-}{
-  "entailment": 1,
-  "reason": "The given sentence is a broader statement that encompasses Paris being a city in France."
-}{
-  "entailment": 1,
-  "reason": "The sentence can be inferred from the text since Paris is located inside France which suggests that France is a larger entity than Paris."
-}{
-  "entailment": 1,
-  "reason": "The sentence can be inferred from the text as 'Paris is a city in France', implying that France is a country. However, there is no information about its size, so the statement 'France is a big country' cannot be confirmed or contradicted by the given text."
-}{
-  "entailment": 1,
-  "reason": "The sentence can be inferred from the text. 'Paris is a city in France' implies that France exists and therefore is a country. Since Paris is a major city in France, it could also be inferred that France is big."
-}{
-  "entailment": 1,
-  "reason": "The sentence can be inferred from the text because Paris is located in France, which is a bigger geographic entity that contains other cities and regions."
-}{
-  "entailment": 1,
-  "reason": "The sentence is a generalization that includes Paris because Paris is located in France. Therefore, it can be inferred from the text."
-}{
-  "entailment": 1,
-  "reason": "The sentence gives a subjective opinion about Paris, but it does not contradict any information provided in the text. Therefore, it can be inferred that Paris is a city in France, and that the author thinks it's beautiful."
-}{
-  "consistency": 1,
-  "reason": "The sentence expresses a positive attribute of the city of Paris, which is a city in France as per the text."
-}
+[
+  {
+    "sentence_number": 1,
+    "entailed": 0,
+    "reason": "The statement contradicts the given text which states that Paris is a city in France."
+  },
+  {
+    "sentence_number": 2,
+    "entailed": 1,
+    "reason": "The statement is restating the information provided by the text."
+  },
+  {
+    "sentence_number": 3,
+    "entailed": 0,
+    "reason": "The statement is not provided in the given text. The beauty of the city is subjective and open for debate. "
+  },
+  {
+    "sentence_number": 4,
+    "entailed": 1,
+    "reason": "The statement aligns with the information given in the text. The Eiffel Tower is a popular landmark in Paris."
+  },
+  {
+    "sentence_number": 5,
+    "entailed": 0,
+    "reason": "The statement is not provided in the given text. It is a personal opinion and not a fact to be entailed from the text."
+  }
+][
+  {
+    "sentence_number": 1,
+    "entailed": 0,
+    "reason": "Paris is stated to be in France but not Italy in the text."
+  },
+  {
+    "sentence_number": 2,
+    "entailed": 1,
+    "reason": "The sentence conveys the same information as the text, albeit in a different way."
+  },
+  {
+    "sentence_number": 3,
+    "entailed": 0,
+    "reason": "While it is possible that Paris is a beautiful city, the text does not explicitly state it, so the sentence cannot be entailed."
+  },
+  {
+    "sentence_number": 4,
+    "entailed": 1,
+    "reason": "The text states that Paris is a city in France and the Eiffel Tower is located in Paris, so this statement is entailed."
+  },
+  {
+    "sentence_number": 5,
+    "entailed": 0,
+    "reason": "The text does not provide any information on whether the writer loves Paris or not, so this sentence cannot be entailed."
+  }
+][
+  {
+    "sentence_number": 1,
+    "entailed": 0,
+    "reason": "The text states that Paris is a city in France, not in Italy."
+  },
+  {
+    "sentence_number": 2,
+    "entailed": 1,
+    "reason": "The sentence contains the same information as the text."
+  },
+  {
+    "sentence_number": 3,
+    "entailed": 0,
+    "reason": "The text doesn't provide any information regarding beauty of Paris."
+  },
+  {
+    "sentence_number": 4,
+    "entailed": 1,
+    "reason": "The sentence provides additional information about Paris which is also present in the text."
+  },
+  {
+    "sentence_number": 5,
+    "entailed": 0,
+    "reason": "The text doesn't provide any information about personal feelings towards Paris."
+  }
+]

@@ -1,10 +1,15 @@
-You will be given one text and one sentence. Decide whether the sentence can be entailed from the text. 
+You will be given a text and different sentences. For each sentence, decide whether it can be entailed from the text.
+Answer 1 if the information in the sentence is stated in the text. 
+Answer 0 if any information in the sentence is not stated in the text, even if the information is factual.
+Provide a specific reason for your answer. 
 
-Provide a RFC8259 compliant JSON response following this format, without deviation:
-{
-  "consistency": 0,
-  "reason": "reason for answering 0 or 1",
-}
+In your response, only provide a RFC8259 compliant JSON following this format, without deviation:
+[
+  {
+    "sentence_number": 1,
+    "entailed": 0,
+    "reason": "reason for answering 0 or 1"
+  },
+]
 
-For the consistency, answer with 0 or 1. Answer 1 only if the sentence can be inferred from the text. If the sentence contradicts the text or contains information not found in the text, answer 0. 
-Only use information found in the text. Do not use any contextual knowledge or information from other sources. Provide a reason for answering 0 or 1. 
+Strictly do not include any other text other than the above JSON, as it affects parsing of the result.

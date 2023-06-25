@@ -1,8 +1,8 @@
-from get_human_scores import get_human_scores
-from get_text import get_text_for_summarization
-from parse_result import parse_result
-from eval_test import generate_chat_completion
-from write_to_csv import *
+from utils.get_text import get_text_for_summarization
+from utils.parse_result import parse_result
+from call_gpt import *
+from utils.write_to_csv import *
+from utils.csv_to_array import ctoa
 
 f = open("./key.txt")
 API_KEY = f.read()
@@ -10,10 +10,9 @@ API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 gpt_model = "gpt-3.5-turbo"
 
-papers, sentences, evals = get_human_scores()
-# write_1d_arr_to_csv(papers, 'paper_names.csv')
-# write_to_csv(sentences, 'sentences.csv')
-# write_to_csv(evals, './result/human_scores.csv')
+papers = ctoa("data/paper_names.csv")
+sentences = ctoa("data/sentences.csv")
+human_scores = ctoa("result/human_scores.csv")
 
 f = open("./eval_instruction.txt")
 instruction = f.read()
@@ -25,8 +24,8 @@ num_papers = len(papers)
 scores = []
 reasons = []
 
-for np in range(12, num_papers):
-    p = papers[np]
+for np in range(5, num_papers):
+    p = papers[np][0]
     messages = [instruction_msg]
     text = get_text_for_summarization(p)
     sent = sentences[np]
@@ -38,10 +37,17 @@ for np in range(12, num_papers):
     scores_for_paper = generate_chat_completion(messages)
     write_to_result(scores_for_paper)
     try:
-        sc, rs = parse_result(scores_for_paper)
+        ns, sc, rs = parse_result(scores_for_paper)
+        if ns != num_sent:
+            print(
+                "wrong number of sentences for paper {}, expected {}, got {}".format(
+                    np, num_sent, ns
+                )
+            )
+            break
         scores.append(sc)
         reasons.append(rs)
-    except Exception as e: 
+    except Exception as e:
         print(e)
         break
 
